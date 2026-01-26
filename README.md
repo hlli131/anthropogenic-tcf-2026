@@ -80,7 +80,7 @@ Original datasets for full analysis are publicly available from the following so
   Source: https://www.ncei.noaa.gov/products/international-best-track-archive  
 
 ### Atmospheric reanalysis
-- **ECMWF Fifth-Generation Reanalysis (ERA5)**  
+- **ECMWF Fifth Generation Reanalysis (ERA5)**  
   Source: https://cds.climate.copernicus.eu/datasets/reanalysis-era5-pressure-levels-monthly-means  
 
 ### Oceanic datasets
