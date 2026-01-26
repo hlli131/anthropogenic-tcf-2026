@@ -12,18 +12,18 @@
 ## 📖 Brief introduction
 This repository includes the following directories:
 - *`observed_interhemispheric_contrast`*
-- *`key_factors_identification`*
+- *`primary_control_identification`*
 - *`detection_and_attribution_analysis`*
-- *`physical_mechanisms_explanation`*
+- *`physical_mechanism_explanation`*
 - *`source_data`*
 
 
 | Directory name | Description |
 | ---------- | ---------- |
 | *observed_interhemispheric_contrast* | Analyze and plot the contrast in TCF trends between hemispheres (**Fig. 1**) |
-| *key_factors_identification* | Identify key factors and quantify their contributions and interactions applying IML (**Fig. 2**) |
-| *detection_and_attribution_analysis* | Detect and attribute TCF to human fingerprints using OFM and CMIP6 simulations (**Fig. 3**) |
-| *physical_mechanisms_explanation* | Explain the physical mechanisms through coupled thermodynamic and dynamic pathways (**Fig. 4**) |
+| *primary_control_identification* | Identify key factors and quantify their contributions and interactions applying IML (**Fig. 2**) |
+| *detection_and_attribution_analysis* | Detect and attribute TCF to human fingerprints using OF and CMIP6 simulations (**Fig. 4**) |
+| *physical_mechanism_explanation* | Explain the physical mechanism through coupled thermodynamic and dynamic pathways (**Fig. 5**) |
 | *source_data* | Source data for the paper (**Figs. 1–4**)|
 
 
