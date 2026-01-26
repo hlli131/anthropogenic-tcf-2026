@@ -72,43 +72,6 @@ pip install <package_name>
 **⏱️ Expected installation time**: Typically completes **within 5 minutes**, depending on the network speed and system configuration.
 
 
-## 📚 Demo
-The *`demo`* directory provides lightweight analysis using small sample datasets, which allows users to quickly verify whether all components are functioning properly before conducting full analysis. Each demo is **completely standalone** and includes the **sample data**, **analysis code**, and **corresponding output**:
-```
-demo/
-├── demo1/
-│   ├── demo1_data/
-│   ├── demo1_analysis.py
-│   ├── demo1_analysis.ipynb
-│   └── FigD1.png
-├── demo2/
-│   ├── demo2_data/
-│   ├── demo2_analysis.py
-│   ├── demo2_analysis.ipynb
-│   └── FigD2.png
-├── demo3/
-│   ├── demo3_data/
-│   ├── demo3_analysis.py
-│   ├── demo3_analysis.ipynb
-│   └── FigD3.png
-└── demo4/
-    ├── demo4_data/
-    ├── demo4_analysis.py
-    ├── demo4_analysis.ipynb
-    └── FigD4.png
-```
-**📌 Please note**: These outputs (e.g., Figs. D1–D4) are generated from small sample datasets for validation purposes only and are expected to differ from the main results (Figs. 1–4).
-
-**⏱️ Expected running time**:
-- *`demo1`*: **~1 minutes**
-- *`demo2`*: **~2 minutes**
-- *`demo3`*: **~1 minutes**
-- *`demo4`*: **~1 minutes**
-- total for all demos: **~5 minutes**
-
-Actual running time may vary depending on system configuration and computational resources.
-
-
 ## 📦 Data availability
 Original datasets for full analysis are publicly available from the following sources:
 
