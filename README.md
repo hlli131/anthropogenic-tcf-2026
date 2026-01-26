@@ -22,7 +22,7 @@ This repository includes the following directories:
 | ---------- | ---------- |
 | *observed_interhemispheric_contrast* | Analyze and plot the contrast in TCF trends between hemispheres (**Fig. 1**) |
 | *primary_control_identification* | Identify key factors and quantify their contributions and interactions applying IML (**Fig. 2**) |
-| *detection_and_attribution_analysis* | Detect and attribute TCF to human fingerprints using OF and CMIP6 simulations (**Fig. 4**) |
+| *detection_and_attribution_analysis* | Detect and attribute TCF to human fingerprints using SVD, OF, and CMIP6 simulations (**Figs. 3–4**) |
 | *physical_mechanism_explanation* | Explain the physical mechanism through coupled thermodynamic and dynamic pathways (**Fig. 5**) |
 | *source_data* | Source data for the paper (**Figs. 1–4**)|
 
