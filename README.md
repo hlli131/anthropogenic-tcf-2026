@@ -24,7 +24,7 @@ This repository includes the following directories:
 | *key_factors_identification* | Identify key factors and quantify their contributions and interactions applying IML (**Fig. 2**) |
 | *detection_and_attribution_analysis* | Detect and attribute TCF to human fingerprints using OFM and CMIP6 simulations (**Fig. 3**) |
 | *physical_mechanisms_explanation* | Explain the physical mechanisms through coupled thermodynamic and dynamic pathways (**Fig. 4**) |
-| *source_data* | Source data of the paper (**Figs. 1–4**)|
+| *source_data* | Source data for the paper (**Figs. 1–4**)|
 
 
 
