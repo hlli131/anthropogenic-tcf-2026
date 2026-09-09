@@ -74,7 +74,7 @@ pip install <package_name>
 
 ## 🧪 Reproducing the results
 ### 1. Observed heterogeneity in global distribution of TCF trends (Fig.1)
-Processed data are provided in `observed_interhemispheric_contrast/derived_data`, so **Fig.1 can be reproduced directly**:
+Processed data are provided in `observed_interhemispheric_contrast/derived_data`, so **Fig.1 can be generated directly**:
 
 ```bash
 python observed_interhemispheric_contrast/02_plot_fig1.py \
@@ -82,7 +82,7 @@ python observed_interhemispheric_contrast/02_plot_fig1.py \
     --output Fig1.pdf
 ```
 
-To reproduce the analysis from the raw IBTrACS file, **run the scripts in order**:
+To reproduce the analysis from the raw IBTrACS file, please **run the following scripts in sequence**:
 
 ```bash
 python observed_interhemispheric_contrast/01_analyze_observed_tcf.py \
