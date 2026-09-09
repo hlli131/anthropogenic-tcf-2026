@@ -82,7 +82,7 @@ python observed_interhemispheric_contrast/02_plot_fig1.py \
     --output Fig1.pdf
 ```
 
-To reproduce the analysis from the raw IBTrACS file, please **run the following scripts in sequence**:
+To reproduce the analysis from the raw `IBTrACS` file, please **run the following scripts in sequence**:
 
 ```bash
 python observed_interhemispheric_contrast/01_analyze_observed_tcf.py \
