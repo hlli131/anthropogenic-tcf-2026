@@ -26,7 +26,7 @@ This repository includes the following directories:
 | *source_data* | Source data for the paper (**Figs.1–4**)|
 
 
-## ⚙️ Configuration (desktop)
+## ⚙️ Related configuration (desktop)
 - **Platform**: Windows Subsystem for Linux (WSL)  
 
 - **Dependencies**:
@@ -60,7 +60,7 @@ This repository includes the following directories:
   ```
 
 
-## 🚀 Installation
+## 🚀 Package installation
 All required packages can be installed via `conda` (from [**Conda-forge**](https://conda-forge.org)) or `pip` (from [**PyPI**](https://pypi.org)) using the following commands:
 ```
 # Using conda (recommended) ✅
