@@ -26,7 +26,7 @@ This repository includes the following directories:
 | *source_data* | Source data for the paper (**Figs.1–4**)|
 
 
-## ⚙️ Related configuration (desktop)
+## ⚙️ Related configuration
 - **Platform**: Windows Subsystem for Linux (WSL)  
 
 - **Dependencies**:
