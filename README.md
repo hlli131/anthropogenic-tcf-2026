@@ -74,7 +74,7 @@ pip install <package_name>
 
 ## 🧪 Reproducing the results
 ### 1. Observed heterogeneity in global distribution of TCF trends (Fig.1)
-Processed data are provided in `observed_interhemispheric_contrast/derived_data`, so **Fig.1 can be generated directly**:
+Processed data is provided in `observed_interhemispheric_contrast/derived_data`, so **Fig.1 can be generated directly**:
 
 ```bash
 python observed_interhemispheric_contrast/02_plot_fig1.py \
@@ -95,6 +95,24 @@ python observed_interhemispheric_contrast/02_plot_fig1.py \
 ```
 
 ### 2. Primary environmental factors influencing global TCF (Fig.2)
+Processed data is not provided here due to its large size. 
+To reproduce the results, please **download the [IBTrACS](https://www.ncei.noaa.gov/products/international-best-track-archive), 
+[ERA5](https://cds.climate.copernicus.eu/datasets/reanalysis-era5-pressure-levels-monthly-means), 
+and [ORAS5](https://cds.climate.copernicus.eu/datasets/reanalysis-oras5) datasets and run the following scripts in sequence**:
+
+```bash
+python primary_factor_identification/01_prepare_data.py \
+    --input-dir input_data \
+    --output primary_factor_identification/processed_data/IML_data.csv
+
+python primary_factor_identification/02_train_models.py \
+    --data primary_factor_identification/derived_data/IML_data.csv \
+    --output-dir primary_factor_identification/derived_data
+
+python primary_factor_identification/03_plot_fig2.py \
+    --data-dir primary_factor_identification/derived_data \
+    --output Fig2.pdf
+```
 
 
 ### 3. Detection and attribution of anthropogenic fingerprints (Figs.3–4)
