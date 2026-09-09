@@ -1,6 +1,6 @@
 # Human-influenced heterogeneity in global distribution of tropical cyclone frequency trends
 ![Status](https://img.shields.io/badge/Status-Under_Review-yellow)
-![Version](https://img.shields.io/badge/Version-2026.09.09-red)
+![Version](https://img.shields.io/badge/Version-2026.09.10-red)
 ![Language](https://img.shields.io/badge/Python-3.11-3776ab?logo=python)
 ![License](https://img.shields.io/badge/License-MIT-green)
 
@@ -82,7 +82,7 @@ python observed_interhemispheric_contrast/02_plot_fig1.py \
     --output Fig1.pdf
 ```
 
-To reproduce the analysis from the raw [**IBTrACS**](https://www.ncei.noaa.gov/products/international-best-track-archive) file, please **run the following scripts in sequence**:
+To reproduce the analysis from the [**IBTrACS**](https://www.ncei.noaa.gov/products/international-best-track-archive) dataset, please **run the following scripts in sequence**:
 
 ```bash
 python observed_interhemispheric_contrast/01_analyze_observed_tcf.py \
