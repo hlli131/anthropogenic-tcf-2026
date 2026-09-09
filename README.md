@@ -1,6 +1,6 @@
 # Human-influenced heterogeneity in global distribution of tropical cyclone frequency trends
 ![Status](https://img.shields.io/badge/Status-Under_Review-yellow)
-![Version](https://img.shields.io/badge/Version-2026.09.07-red)
+![Version](https://img.shields.io/badge/Version-2026.09.09-red)
 ![Language](https://img.shields.io/badge/Python-3.11-3776ab?logo=python)
 ![License](https://img.shields.io/badge/License-MIT-green)
 
@@ -12,24 +12,23 @@
 ## 📖 Brief introduction
 This repository includes the following directories:
 - *`observed_interhemispheric_contrast`*
-- *`primary_control_identification`*
+- *`primary_factor_identification`*
 - *`detection_and_attribution_analysis`*
 - *`physical_mechanism_explanation`*
 - *`source_data`*
 
-
 | Directory name | Description |
 | ---------- | ---------- |
-| *observed_interhemispheric_contrast* | Analyze and plot the heterogeneity in global TCF trends (**Fig. 1**) |
-| *primary_factor_identification* | Identify key factors and quantify their contributions and interactions using IML (**Fig. 2**) |
-| *detection_and_attribution_analysis* | Detect and attribute TCF to human fingerprints using SVD, OF, and CMIP6 simulations (**Figs. 3, 4**) |
-| *physical_mechanism_explanation* | Explain the physical mechanism through coupled thermodynamic and dynamic pathways (**Fig. 5**) |
-| *source_data* | Source data for the paper (**Figs. 1–4**)|
-
+| *observed_interhemispheric_contrast* | Analyze and plot the heterogeneity in global TCF trends (**Fig.1**) |
+| *primary_factor_identification* | Identify key factors and quantify their contributions and interactions using IML (**Fig.2**) |
+| *detection_and_attribution_analysis* | Detect and attribute TCF to human fingerprints using SVD, OF, and CMIP6 simulations (**Figs.3–4**) |
+| *physical_mechanism_explanation* | Explain the physical mechanism through coupled thermodynamic and dynamic pathways (**Fig.5**) |
+| *source_data* | Source data for the paper (**Figs.1–4**)|
 
 
 ## ⚙️ Configuration (desktop)
 - **Platform**: Windows Subsystem for Linux (WSL)  
+
 - **Dependencies**:
   ```
   Python==3.11
@@ -52,6 +51,7 @@ This repository includes the following directories:
   tcpyPI=1.4.0
   xesmf==0.8.7 (not recommended on Windows)
   ```
+
 - **Hardware**:
   ```
   RAM: 32 GB
@@ -72,6 +72,39 @@ pip install <package_name>
 **⏱️ Expected installation time**: Typically completes **within 5 minutes**, depending on the network speed and system configuration.
 
 
+## 🧪 Reproducing the results
+### 1. Observed heterogeneity in global distribution of TCF trends (Fig.1)
+Processed data are provided in `observed_interhemispheric_contrast/derived_data`, so **Fig.1 can be reproduced directly**:
+
+```bash
+python observed_interhemispheric_contrast/02_plot_fig1.py \
+    --data-dir observed_interhemispheric_contrast/derived_data \
+    --output Fig1.pdf
+```
+
+To reproduce the analysis from the raw IBTrACS file, **run the scripts in order**:
+
+```bash
+python observed_interhemispheric_contrast/01_analyze_observed_tcf.py \
+    --ibtracs ibtracs.ALL.list.v04r01.csv \
+    --output-dir observed_interhemispheric_contrast/derived_data
+
+python observed_interhemispheric_contrast/02_plot_fig1.py \
+    --data-dir observed_interhemispheric_contrast/derived_data \
+    --output Fig1.pdf
+```
+
+### 2. Primary environmental factors influencing global TCF (Fig.2)
+
+
+### 3. Detection and attribution of anthropogenic fingerprints (Figs.3–4)
+
+
+### 4. Physical mechanism driving TCF changes (Fig.5)
+
+
+
+
 ## 📦 Data availability
 Original datasets for full analysis are publicly available from the following sources:
 
@@ -86,8 +119,10 @@ Original datasets for full analysis are publicly available from the following so
 ### Oceanic datasets
 - **ECMWF Ocean Reanalysis System 5 (ORAS5)**  
   Source: https://cds.climate.copernicus.eu/datasets/reanalysis-oras5  
+
 - **Hadley Centre Sea Ice and Sea Surface Temperature (HadISST)**  
   Source: https://www.metoffice.gov.uk/hadobs/hadisst  
+
 - **Extended Reconstructed Sea Surface Temperature version 6 (ERSSTv6)**  
   Source: https://www.ncei.noaa.gov/products/extended-reconstructed-sst  
 
