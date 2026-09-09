@@ -69,7 +69,7 @@ conda install <package_name> -c conda-forge
 # Using pip ✅
 pip install <package_name>
 ```
-**⏱️ Expected installation time**: Typically completes **within 5 minutes**, depending on the network speed and system configuration.
+**⏱️ Expected installation time**: Generally completes **within 5 minutes**, depending on the network speed and system configuration.
 
 
 ## 🧪 Reproducing the results
