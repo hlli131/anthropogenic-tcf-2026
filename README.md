@@ -72,7 +72,7 @@ pip install <package_name>
 **⏱️ Expected installation time**: Typically completes **within 5 minutes**, depending on the network speed and system configuration.
 
 
-## 🧪 Reproducing the main results
+## 🧪 Result reproduction
 ### 1. Observed heterogeneity in global distribution of TCF trends (Fig.1)
 Processed data is provided in `observed_interhemispheric_contrast/derived_data`, so **Fig.1 can be generated directly**:
 
