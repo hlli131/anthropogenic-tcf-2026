@@ -11,19 +11,19 @@
 
 ## 📖 Brief introduction
 This repository includes the following directories:
-- *`observed_interhemispheric_contrast`*
-- *`primary_factor_identification`*
-- *`detection_and_attribution_analysis`*
-- *`physical_mechanism_explanation`*
-- *`source_data`*
+- `observed_interhemispheric_contrast`
+- `primary_factor_identification`
+- `detection_and_attribution_analysis`
+- `physical_mechanism_explanation`
+- `source_data`
 
 | Directory name | Description |
 | ---------- | ---------- |
-| *observed_interhemispheric_contrast* | Analyze and plot the heterogeneity in global TCF trends (**Fig.1**) |
-| *primary_factor_identification* | Identify key factors and quantify their contributions and interactions using IML (**Fig.2**) |
-| *detection_and_attribution_analysis* | Detect and attribute TCF to human fingerprints using SVD, OF, and CMIP6 simulations (**Figs.3–4**) |
-| *physical_mechanism_explanation* | Explain the physical mechanism through coupled thermodynamic and dynamic pathways (**Fig.5**) |
-| *source_data* | Source data for the paper (**Figs.1–4**)|
+| `observed_interhemispheric_contrast` | Analyze and plot the heterogeneity in global TCF trends (**Fig.1**) |
+| `primary_factor_identification` | Identify key factors and quantify their contributions and interactions using IML (**Fig.2**) |
+| `detection_and_attribution_analysis` | Detect and attribute TCF to human fingerprints using SVD, OF, and CMIP6 simulations (**Figs.3–4**) |
+| `physical_mechanism_explanation` | Explain the physical mechanism through coupled thermodynamic and dynamic pathways (**Fig.5**) |
+| `source_data` | Source data for the paper (**Figs.1–4**)|
 
 
 ## ⚙️ Related configuration
@@ -116,9 +116,20 @@ python primary_factor_identification/03_plot_fig2.py \
 
 
 ### 3. Detection and attribution of anthropogenic fingerprints (Figs.3–4)
+Derived data is not provided here due to its large size.
+To reproduce the SVD analysis, please **first download the [IBTrACS](https://www.ncei.noaa.gov/products/international-best-track-archive) and [HadISST](https://www.metoffice.gov.uk/hadobs/hadisst) datasets and execute `observed_interhemispheric_contrast/01_analyze_observed_tcf.py` to obtain `annual_tcf.nc`.
+Then,， run the following scripts in sequence**:
 
+```bash
+python detection_and_attribution_analysis/01_svd_analysis.py \
+    --tcf annual_tcf.nc \
+    --sst HadISST_sst.nc \
+    --output-dir detection_and_attribution_analysis/derived_data
 
-
+python detection_and_attribution_analysis/03_plot_fig3.py \
+    --data-dir detection_and_attribution_analysis/derived_data \
+    --output Fig3.pdf
+```
 
 
 
