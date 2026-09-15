@@ -118,7 +118,7 @@ python primary_factor_identification/03_plot_fig2.py \
 ### 3. Detection and attribution of anthropogenic fingerprints (Figs.3–4)
 Derived data is not provided here due to its large size.
 To reproduce the SVD analysis, please **first download the [IBTrACS](https://www.ncei.noaa.gov/products/international-best-track-archive) and [HadISST](https://www.metoffice.gov.uk/hadobs/hadisst) datasets and execute `observed_interhemispheric_contrast/01_analyze_observed_tcf.py` to obtain `annual_tcf.nc`.
-Then,， run the following scripts in sequence**:
+Then, run the following scripts in sequence**:
 
 ```bash
 python detection_and_attribution_analysis/01_svd_analysis.py \
@@ -131,7 +131,19 @@ python detection_and_attribution_analysis/03_plot_fig3.py \
     --output Fig3.pdf
 ```
 
+To reproduce the detection and attribution analysis, please **download the [CMIP6](https://pcmdi.llnl.gov/CMIP6) dataset and run the following scripts in sequence**:
 
+```bash
+python detection_and_attribution_analysis/02_attribution_analysis.py \
+    --observed observed_tcf.nc \
+    --forced forced_tcf.nc \
+    --control picontrol_tcf.nc \
+    --output-dir detection_and_attribution_analysis/derived_data
+
+python detection_and_attribution_analysis/04_plot_fig4.py \
+    --data-dir detection_and_attribution_analysis/derived_data \
+    --output Fig4.pdf
+```
 
 ### 4. Physical mechanism driving TCF changes (Fig.5)
 
