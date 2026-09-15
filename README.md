@@ -146,8 +146,18 @@ python detection_and_attribution_analysis/04_plot_fig4.py \
 ```
 
 ### 4. Physical mechanism driving TCF changes (Fig.5)
+Derived data is not provided here due to its large size.
+To reproduce the environmental fields calculated from DAMIP simulations, please **download the [CMIP6](https://pcmdi.llnl.gov/CMIP6) dataset and run the following scripts in sequence**:
 
+```bash
+python physical_mechanism_explanation/01_prepare_data.py \
+    --input-dir DAMIP_data \
+    --output-dir physical_mechanism_explanation/derived_data
 
+python physical_mechanism_explanation/02_plot_fig5.py \
+    --data-dir physical_mechanism_explanation/derived_data \
+    --output Fig5.pdf
+```
 
 
 ## 📦 Data availability
