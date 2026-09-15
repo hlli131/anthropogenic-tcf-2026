@@ -74,7 +74,7 @@ pip install <package_name>
 
 ## 🧪 Result reproduction
 ### 1. Observed heterogeneity in global distribution of TCF trends (Fig.1)
-Processed data is provided in `observed_interhemispheric_contrast/derived_data`, so **Fig.1 can be generated directly**:
+Derived data is provided in `observed_interhemispheric_contrast/derived_data`, so **Fig.1 can be generated directly**:
 
 ```bash
 python observed_interhemispheric_contrast/02_plot_fig1.py \
@@ -106,7 +106,7 @@ python primary_factor_identification/01_prepare_data.py \
     --output primary_factor_identification/processed_data/IML_data.csv
 
 python primary_factor_identification/02_train_models.py \
-    --data primary_factor_identification/derived_data/IML_data.csv \
+    --data primary_factor_identification/processed_data/IML_data.csv \
     --output-dir primary_factor_identification/derived_data
 
 python primary_factor_identification/03_plot_fig2.py \
@@ -116,6 +116,10 @@ python primary_factor_identification/03_plot_fig2.py \
 
 
 ### 3. Detection and attribution of anthropogenic fingerprints (Figs.3–4)
+
+
+
+
 
 
 ### 4. Physical mechanism driving TCF changes (Fig.5)
